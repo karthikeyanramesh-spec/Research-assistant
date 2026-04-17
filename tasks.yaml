@@ -1,0 +1,30 @@
+analysis_task:
+  description: >
+    Analyse the collected content about {query} from multiple sources and extract meaningful insights. Identify key themes, important facts, trends, and relationships. Remove redundant or irrelevant information and organize the output into a clear, structured format. Highlight any gaps, inconsistencies, or missing areas that require further research, and focus on:
+    1.Read all scraped content
+    2.Identify:
+      Key points
+      Trends
+  expected_output: >
+    A structured analysis including:
+    - Key insights and important points
+    - Identified trends and patterns
+    - Relationships between concepts
+    - Highlighted gaps or missing information
+  agent: analyst
+
+writing_task:
+  description: >
+    Generate a comprehensive and well-structured report on {query} in {mode} mode based on the analyzed insights. The report should be clear, logically organized, and tailored to the selected user mode. Ensure readability, coherence, and proper formatting and focus on:
+    A polished, professional report on the content that presents the research findings with added analysis and insights. The report should be well-structured
+    with an executive summary, main sections, and conclusion. After writing use autogen_modifier tool to validate and improve the content based on the {mode}
+  expected_output: >
+    A final polished report including:
+    - Executive summary
+    - Well-structured sections with headings
+    - Clear explanations and insights
+    - Logical flow and readability
+    - Conclusion summarizing key points
+  agent: writer
+
+    
